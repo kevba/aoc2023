@@ -1,0 +1,16 @@
+package main
+
+import (
+	"aoc2023"
+	"testing"
+)
+
+func TestSolve(t *testing.T) {
+	input := aoc2023.ReadInputFile("../input_test2.txt")
+	solution := 281
+
+	answer := solve(input)
+	if answer != solution {
+		t.Errorf("answer %v is not equal to solution %v", answer, solution)
+	}
+}
